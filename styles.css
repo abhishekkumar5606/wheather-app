@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #52ACFF;
+background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-card {
+  background-image: linear-gradient( 135deg, #92FFC0 10%, #002661 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#city-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+#city-input::placeholder {
+  color: #94A3B8;
+}
+
+#search-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #4ADE80;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#search-button:hover {
+  background: #22C55E;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.location h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.location p {
+  color: #94A3B8;
+}
+
+.current-weather {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.temperature::after {
+  content: "°C";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+}
+
+.weather-condition {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.weather-condition img {
+  width: 50px;
+  height: 50px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.detail-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.detail-card h3 {
+  color: #94A3B8;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.aqi-badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.good { background: #4ADE80; }
+.moderate { background: #FACC15; }
+.unhealthy { background: #F87171; }
+
+
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }

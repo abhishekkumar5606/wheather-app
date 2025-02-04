@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSphere - Modern Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-card">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div class="header">
+            <div class="location">
+                <h2>London</h2>
+                <p>United Kingdom</p>
+            </div>
+            <div class="time">
+                <p>16:10:23</p>
+                <p>2025-02-03</p>
+            </div>
+        </div>
+
+        <div class="current-weather">
+            <div class="weather-condition">
+                <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="Weather Icon">
+                <p>Partly cloudy</p>
+            </div>
+            <div class="temperature">6.2</div>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-card">
+                <h3>HUMIDITY</h3>
+                <p>100%</p>
+            </div>
+            <div class="detail-card">
+                <h3>WIND SPEED</h3>
+                <p>11.9 km/h</p>
+            </div>
+            <div class="detail-card">
+                <h3>FEELS LIKE</h3>
+                <p>3.7°C</p>
+            </div>
+            <div class="detail-card">
+                <h3>AIR QUALITY</h3>
+                <span class="aqi-badge moderate">Moderate</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
